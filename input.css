@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Sunnyside */
+:root {
+  --yellow: hsl(51, 100%, 49%);
+  --red: hsl(7, 99%, 70%);
+  --cyan: hsl(167, 40%, 24%);
+  --blue: hsl(198, 62%, 26%);
+  --dark-blue: hsl(212, 27%, 19%);
+  --gray: hsl(210, 4%, 67%);
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: var(--dark-blue);
+}
+
+/* Example of extending Tailwind with custom classes */
+.learn-more-yellow {
+  @apply uppercase font-serif font-bold border-b-4;
+  border-color: var(--yellow);
+}
+
+.learn-more-red {
+  @apply uppercase font-serif font-bold border-b-4;
+  border-color: var(--red);
+}
